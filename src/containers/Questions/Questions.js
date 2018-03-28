@@ -40,21 +40,31 @@ class Questions extends React.Component {
                 onCheckpointEnd={(checkpoint) => this.handleCheckpoint(checkpoint)} 
                 />
 
-        <Entity position='-4 2 -5'
-                text-geometry={{
-                  value: 'QUESTIONS?', 
-                  font: '#futuraFont',
-                  size: 1
-                }}
-                material={{color: 'white'}} />
+        <Entity position='-4 0 -6'>
+          <Entity position='0 2 0'
+                  text-geometry={{
+                    value: 'QUESTIONS?', 
+                    font: '#futuraFont',
+                    size: 1
+                  }}
+                  material={{color: 'white'}} />
 
-        <Entity position='-4 1 -5'
-                text-geometry={{
-                  value: '@craigphares', 
-                  font: '#futuraFont',
-                  size: 0.5
-                }}
-                material={{color: 'white'}} />
+          <Entity position='0 0.5 0'
+                  text-geometry={{
+                    value: '@craigphares', 
+                    font: '#futuraFont',
+                    size: 0.3
+                  }}
+                  material={{color: 'white'}} />
+
+          <Entity position='0 0 0'
+                  text-geometry={{
+                    value: 'github.com/craigphares/how-we-build', 
+                    font: '#futuraFont',
+                    size: 0.3
+                  }}
+                  material={{color: 'white'}} />
+        </Entity>
 
         <Teleporter position='8 0 -4' 
                     color='#3d6e7f'

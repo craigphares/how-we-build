@@ -14,9 +14,10 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     onNext: () => {
-      console.log('dispatch next')
-      // dispatch(next())
-      dispatch(push('/etopia'))
+      dispatch(push('/'))
+    },
+    onPrevious: () => {
+      dispatch(push('/kiosk'))
     }
   }
 }

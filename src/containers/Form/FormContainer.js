@@ -16,7 +16,7 @@ const mapDispatchToProps = dispatch => {
       dispatch(push('/kiosk'))
     },
     onPrevious: () => {
-      dispatch(push('/rules'))
+      dispatch(push('/approach'))
     }
   }
 }

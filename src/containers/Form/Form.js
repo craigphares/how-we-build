@@ -19,7 +19,8 @@ class Form extends React.Component {
 
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
+    e.preventDefault()
     this.props.onNext()
   }
 
@@ -36,7 +37,7 @@ class Form extends React.Component {
           <div className="form-wrapper">
             <input type="text" className="field"/>
             <input type="password" className="field"/>
-            <button type="submit" className="btn" onClick={() => this.handleSubmit()}>SIGN IN</button>
+            <button type="submit" className="btn" onClick={(e) => this.handleSubmit(e)}>SIGN IN</button>
           </div>
         </form>
       </div>

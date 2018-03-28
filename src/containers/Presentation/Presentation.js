@@ -2,6 +2,7 @@ import 'aframe'
 import { Scene, Entity } from 'aframe-react'
 import React from 'react'
 import PropTypes from 'prop-types'
+import 'aframe-text-geometry-component'
 
 import Sky from '../../components/Sky'
 import Grid from '../../components/Grid'
@@ -33,6 +34,7 @@ class Presentation extends React.Component {
           <a-asset-item id='dawningFont' src='https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844' />
           <a-asset-item id='exoFont' src='https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2Black.typeface.json?1490305922150' />
           <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725" />
+          <a-asset-item id="futuraFont" src="/fonts/futura2.typeface.json"/>
         </a-assets>
 
         <Camera x={x} 
@@ -45,6 +47,21 @@ class Presentation extends React.Component {
                     />
 
         <Title />
+
+        <Entity position='-3 0 -11'
+                  text-geometry={{
+                    value: 'howwebuild.sixoverground.com', 
+                    font: '#futuraFont',
+                    size: 0.3
+                  }}
+                  material={{color: 'white'}} />
+
+        {/*<Entity position='0 0 -5'
+                className='clickable'
+                link={{
+                  href: '/etopia',
+                  title: 'Etopia'
+                }}/>*/}
 
         <Grid/>
         <Entity light={{color: '#ccccff', intensity: 1, type: 'ambient'}}/>

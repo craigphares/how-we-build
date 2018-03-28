@@ -13,7 +13,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     onNext: () => {
-      dispatch(push('/'))
+      dispatch(push('/questions'))
     },
     onPrevious: () => {
       dispatch(push('/form'))
