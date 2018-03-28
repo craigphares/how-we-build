@@ -1,0 +1,37 @@
+.form {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.form-wrapper {
+  width: 300px;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #fff;
+  border: none;
+  padding: 8px;
+  margin-bottom: 8px;
+  pointer-events: all;
+}
+
+.btn {
+  padding: 8px;
+  background-color: #4076fd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  pointer-events: all;
+}
